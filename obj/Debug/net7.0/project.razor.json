@@ -16565,6 +16565,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Luiz\\Desktop\\Luiz\\Projetos\\FormMvc\\Views\\Home\\Editar.cshtml",
+      "TargetPath": "Views\\Home\\Editar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Luiz\\Desktop\\Luiz\\Projetos\\FormMvc\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"

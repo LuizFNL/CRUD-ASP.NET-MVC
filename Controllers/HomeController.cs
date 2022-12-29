@@ -16,9 +16,11 @@ public class HomeController : Controller
         _repositorio = repositorio;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        return View();
+        var usuarios = await _repositorio.ListarTodos();
+
+        return View(usuarios);
     }
 
     public IActionResult Criar()
@@ -32,6 +34,31 @@ public class HomeController : Controller
         if (ModelState.IsValid)
         {
             _repositorio.Adicionar(usuarioModel);
+            return RedirectToAction(nameof(Index));
+        }
+
+        return View(usuarioModel);
+    }
+
+    public async Task<IActionResult> Editar(int id)
+    {
+        var usuario = await _repositorio.BuscarUsuario(id);
+
+        return View(usuario);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Editar(int id, UsuarioModel usuarioModel)
+    {
+        if (id != usuarioModel.Id)
+        {
+            return NotFound();
+        }
+
+        if (ModelState.IsValid)
+        {
+            await _repositorio.Alterar(usuarioModel);
+            return RedirectToAction(nameof(Index));
         }
 
         return View(usuarioModel);

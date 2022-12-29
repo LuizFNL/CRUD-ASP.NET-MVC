@@ -1,5 +1,6 @@
 using FormMVC.Data;
 using FormMVC.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace FormMVC.Repositories
 {
@@ -16,6 +17,28 @@ namespace FormMVC.Repositories
             _context.SaveChanges();
 
             return usuario;
+        }
+
+        public async Task<UsuarioModel> Alterar(UsuarioModel usuarioModel)
+        {
+            _context.Usuarios.Update(usuarioModel);
+            await _context.SaveChangesAsync();
+
+            return usuarioModel;
+        }
+
+        public async Task<UsuarioModel> BuscarUsuario(int id)
+        {
+            var usuario = await _context.Usuarios.FindAsync(id);
+
+            return usuario;
+        }
+
+        public async Task<List<UsuarioModel>> ListarTodos()
+        {
+            var usuariosDB = await _context.Usuarios.ToListAsync();
+
+            return usuariosDB;
         }
     }
 }
