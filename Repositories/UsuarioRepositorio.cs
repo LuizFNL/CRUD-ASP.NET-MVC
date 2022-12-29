@@ -35,6 +35,12 @@ namespace FormMVC.Repositories
             return usuario;
         }
 
+        public void Deletar(UsuarioModel usuarioModel)
+        {
+            _context.Remove(usuarioModel);
+            _context.SaveChangesAsync();
+        }
+
         public async Task<List<UsuarioModel>> ListarTodos()
         {
             var usuariosDB = await _context.Usuarios.ToListAsync();

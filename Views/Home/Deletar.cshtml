@@ -1,0 +1,19 @@
+@model UsuarioModel;
+
+@{
+    ViewData["Title"] = "Deletar";
+}
+
+<h1>Tem certeza que deseja deletar @Model.Nome @Model.Sobrenome?</h1>
+
+<p>A exclusão deste contato é permanente e irreversível</p>
+
+<br>
+
+<div>
+    <form asp-action="Deletar">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Deletar" class="btn btn-danger" />
+        <a class="btn btn-secondary" asp-action="Index">Voltar</a>
+    </form>
+</div>

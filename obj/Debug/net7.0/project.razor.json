@@ -16575,6 +16575,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Luiz\\Desktop\\Luiz\\Projetos\\FormMvc\\Views\\Home\\Deletar.cshtml",
+      "TargetPath": "Views\\Home\\Deletar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Luiz\\Desktop\\Luiz\\Projetos\\FormMvc\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"

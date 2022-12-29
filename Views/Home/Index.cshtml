@@ -26,7 +26,8 @@
                 <td>@item.Sobrenome</td>
                 <td>@item.Telefone</td>
                 <td>
-                    <a class="btn btn-outline" asp-route-id="@item.Id" asp-action="Editar"><i class="bi bi-pencil-square"></i> Editar |</a>
+                    <a class="btn btn-outline" asp-route-id="@item.Id" asp-action="Editar"><i class="bi bi-pencil-square"></i> Editar</a>|
+                    <a class="btn btn-outline" asp-route-id="@item.Id" asp-action="Deletar"><i class="bi bi-trash"></i> Deletar</a>
                 </td>
             </tr>
         }

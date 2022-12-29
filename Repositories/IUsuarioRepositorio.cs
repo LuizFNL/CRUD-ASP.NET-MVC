@@ -8,5 +8,6 @@ namespace FormMVC.Repositories
         Task<List<UsuarioModel>> ListarTodos();
         Task<UsuarioModel> Alterar(UsuarioModel usuarioModel);
         Task<UsuarioModel> BuscarUsuario(int id);
+        void Deletar(UsuarioModel usuarioModel);
     }
 }

@@ -42,6 +42,11 @@ public class HomeController : Controller
 
     public async Task<IActionResult> Editar(int id)
     {
+        if (await _repositorio.BuscarUsuario(id) == null)
+        {
+            return NotFound();
+        }
+
         var usuario = await _repositorio.BuscarUsuario(id);
 
         return View(usuario);
@@ -62,6 +67,29 @@ public class HomeController : Controller
         }
 
         return View();
+    }
+
+    public async Task<IActionResult> Deletar(int id)
+    {
+        if (await _repositorio.BuscarUsuario(id) == null)
+        {
+            return NotFound();
+        }
+
+        var usuario = await _repositorio.BuscarUsuario(id);
+
+        return View(usuario);
+    }
+
+    [HttpPost, ActionName("Deletar")]
+    public async Task<IActionResult> DeletarUsuario(int id)
+    {
+
+        var usuario = await _repositorio.BuscarUsuario(id);
+
+        _repositorio.Deletar(usuario);
+        return RedirectToAction(nameof(Index));
+
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
