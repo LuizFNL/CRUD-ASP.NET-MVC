@@ -1,0 +1,29 @@
+@model UsuarioModel;
+
+@{
+    ViewData["Title"] = "Criar formulário";
+}
+
+<form asp-action="Criar" class="form-group col-md-3">
+    <div class="form-group">
+        <label asp-for="Nome"></label>
+        <input asp-for="Nome" class="form-control" placeholder="Digite o nome do usuário">
+        <span asp-validation-for="Nome" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Sobrenome"></label>
+        <input asp-for="Sobrenome" class="form-control" placeholder="Digite o sobrenome do usuário">
+        <span asp-validation-for="Sobrenome" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Telefone"></label>
+        <input asp-for="Telefone" class="form-control" placeholder="Digite o telefone do usuário">
+        <span asp-validation-for="Telefone" class="text-danger"></span>
+    </div>
+    <br>
+    <div class="col-md-3">
+        <button type="submit" value="Criar" class="btn btn-primary">Enviar
+            
+        </button>
+    </div>
+</form>
