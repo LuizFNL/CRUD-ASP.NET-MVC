@@ -61,7 +61,7 @@ public class HomeController : Controller
             return RedirectToAction(nameof(Index));
         }
 
-        return View(usuarioModel);
+        return View();
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

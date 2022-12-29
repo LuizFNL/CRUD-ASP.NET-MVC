@@ -21,6 +21,7 @@ namespace FormMVC.Repositories
 
         public async Task<UsuarioModel> Alterar(UsuarioModel usuarioModel)
         {
+
             _context.Usuarios.Update(usuarioModel);
             await _context.SaveChangesAsync();
 
