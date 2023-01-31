@@ -3430,11 +3430,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luiz\\Desktop\\Luiz\\Projetos\\FormMVC\\FormMVC.csproj",
+      "projectUniqueName": "C:\\Users\\Luiz\\Desktop\\Luiz\\Projetos\\CRUD-ASP.NET\\FormMVC.csproj",
       "projectName": "FormMVC",
-      "projectPath": "C:\\Users\\Luiz\\Desktop\\Luiz\\Projetos\\FormMVC\\FormMVC.csproj",
+      "projectPath": "C:\\Users\\Luiz\\Desktop\\Luiz\\Projetos\\CRUD-ASP.NET\\FormMVC.csproj",
       "packagesPath": "C:\\Users\\Luiz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luiz\\Desktop\\Luiz\\Projetos\\FormMVC\\obj\\",
+      "outputPath": "C:\\Users\\Luiz\\Desktop\\Luiz\\Projetos\\CRUD-ASP.NET\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Luiz\\AppData\\Roaming\\NuGet\\NuGet.Config"
