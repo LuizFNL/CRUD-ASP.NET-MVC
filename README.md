@@ -19,4 +19,4 @@ Favor, também visualizar um projeto mais elaborado que criei em: https://github
 
 ![image](https://user-images.githubusercontent.com/108035590/215901082-4b07a782-c779-4efd-b10b-1086e565a3db.png)
 
-## As telas de criação e edição contam com validações de dados.
+As telas de criação e edição contam com validações de dados.
