@@ -11,11 +11,11 @@ Favor, também visualizar um projeto mais elaborado que criei em: https://github
 
 ![image](https://user-images.githubusercontent.com/108035590/215900922-b4074534-16ff-4506-a8eb-23935cc7daff.png)
 
-# Tela de atualização de dados
+# Tela de atualização de dados (Update)
 
 ![image](https://user-images.githubusercontent.com/108035590/215901041-596cb0bb-4926-422a-8f18-de12e10e26c0.png)
 
-# Tela de exclusão de dados
+# Tela de exclusão de dados (Delete)
 
 ![image](https://user-images.githubusercontent.com/108035590/215901082-4b07a782-c779-4efd-b10b-1086e565a3db.png)
 
